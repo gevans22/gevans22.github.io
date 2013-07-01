@@ -23,7 +23,7 @@ Once you have a blank service you need to add the 'Get Selected Finder Items' ac
 ![CartoDB Automator Service](http://www.galenevans.org/images/CartoDB_Upload_Service_in_Automator.png)
 
 In the script itself you can copy and past the following and add your own CartoDB Username and 
-[API Key](http://developers.cartodb.com/documentation/cartodb-apis.html). 
+[API Key](http://developers.cartodb.com/documentation/cartodb-apis.html#authentication). 
 
 <script src="https://gist.github.com/gevans22/5900712.js">
 </script>
