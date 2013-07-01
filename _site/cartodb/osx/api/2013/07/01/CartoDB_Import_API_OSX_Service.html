@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CartoDB Importer API and an OSX Service</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Galen Evans</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>CartoDB Importer API and an OSX Service</h2>
+<p class="meta">01 Jul 2013</p>
+
+<div class="post">
+<p>APIs are great, and the CartoDB team has <a href='http://blog.cartodb.com/post/54101913823/got-files-weve-got-a-import-api'>recently released</a> an importer API. I have been playing around with it a bit as a pretty heavy user of CartoDB and it has been working pretty well. It allows you to do stuff like this:</p>
+
+<p><img src='http://www.galenevans.org/images/cartodb_osx_service.png' alt='OSX Service for Uploading to CartoDB' /></p>
+
+<p><img src='http://www.galenevans.org/images/upload_started.png' alt='Upload Started' /> <img src='http://www.galenevans.org/images/upload_finished.png' alt='Upload Finished' /> <img src='http://www.galenevans.org/images/cartodb_table_uploaded.png' alt='Table in CartoDB' /></p>
+
+<p>This was done through creating an OSX Service via Automator and it is pretty easy to do. The service is mainly a wrapper around <a href='https://gist.github.com/andrewxhill/5884845'>the CartoDB upload bash script</a> that was put together by <a href='https://gist.github.com/andrewxhill'>andrewxhill</a> at CartoDB.</p>
+
+<p>To create the service in OSX you want to open Automator and create a new service.</p>
+
+<p><img src='images/OSX_Automater_Service.png' alt='Create OSX Automator Service' /></p>
+
+<p>Once you have a blank service you need to add the &#8216;Get Selected Finder Items&#8217; action that is located within the &#8216;Files &amp; Folders&#8217; area of the actions library. After the &#8216;Get Selected Finder Items&#8217; you will need to add &#8216;Run Shell Script&#8217; and have it set &#8216;Pass input&#8217; to &#8216;as arugments&#8217;. <img src='images/CartoDB_Upload_Service_in_Automator.png' alt='CartoDB Automator Service' /></p>
+
+<p>In the script itself you can copy and past the following and add your own CartoDB Username and <a href='http://developers.cartodb.com/documentation/cartodb-apis.html'>API Key</a>.</p>
+<script src='https://gist.github.com/gevans22/5900712.js'>
+</script>
+<p>You can now save the service as &#8220;Upload to CartoDB&#8221; or however you link and it will now be an available option when you right click files in Finder.</p>
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Galen Evans<br />
+                  Geographer, Traveler<br />
+                  galenevans(at)gmail.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/gevans22/">Github</a><br />
+                  <a href="http://twitter.com/galen_evans/">Twitter</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>
