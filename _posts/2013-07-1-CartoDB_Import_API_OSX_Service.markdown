@@ -17,10 +17,10 @@ This was done through creating an OSX Service via Automator and it is pretty eas
 
 To create the service in OSX you want to open Automator and create a new service.
 
-![Create OSX Automator Service](images/OSX_Automater_Service.png)
+![Create OSX Automator Service](http://www.galenevans.org/images/OSX_Automater_Service.png)
 
 Once you have a blank service you need to add the 'Get Selected Finder Items' action that is located within the 'Files & Folders' area of the actions library. After the 'Get Selected Finder Items' you will need to add 'Run Shell Script' and have it set 'Pass input' to 'as arugments'.
-![CartoDB Automator Service](images/CartoDB_Upload_Service_in_Automator.png)
+![CartoDB Automator Service](http://www.galenevans.org/images/CartoDB_Upload_Service_in_Automator.png)
 
 In the script itself you can copy and past the following and add your own CartoDB Username and 
 [API Key](http://developers.cartodb.com/documentation/cartodb-apis.html). 
