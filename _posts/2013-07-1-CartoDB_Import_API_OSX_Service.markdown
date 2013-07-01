@@ -13,7 +13,7 @@ APIs are great, and the CartoDB team has [recently released](http://blog.cartodb
 ![Upload Finished](http://www.galenevans.org/images/upload_finished.png)
 ![Table in CartoDB](http://www.galenevans.org/images/cartodb_table_uploaded.png)
 
-This was done through creating an OSX Service via Automator and it is pretty easy to do. The service is mainly a wrapper around [the CartoDB upload bash script](https://gist.github.com/andrewxhill/5884845) that was put together by [andrewxhill](https://gist.github.com/andrewxhill) at CartoDB. 
+This was done through creating an OSX Service via Automator and it is pretty easy to do. The service is mainly a wrapper around [the CartoDB upload bash script](https://gist.github.com/andrewxhill/5884845) that was put together by [andrewxhill](https://www.github.com/andrewxhill) at CartoDB. 
 
 To create the service in OSX you want to open Automator and create a new service.
 
