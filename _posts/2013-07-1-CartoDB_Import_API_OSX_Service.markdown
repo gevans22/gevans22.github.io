@@ -28,4 +28,15 @@ In the script itself you can copy and past the following and add your own CartoD
 <script src="https://gist.github.com/gevans22/5900712.js">
 </script>
 
-You can now save the service as "Upload to CartoDB" or however you link and it will now be an available option when you right click files in Finder.
+You can now save the service as "Upload to CartoDB" or however you like and it will now be available when you right click files in Finder.
+
+Update:
+
+I wasn't the biggest fan of the system events pop ups. They required you to close them and also it would have been too intrustive to have pop ups with the status reports from the upload process. As an alternative to this I made a version that using [Growl](http://growl.info/) and the [GrowlNotify](http://growl.info/downloads) command line tool. Growl costs $3 in the app store but pretty useful for this type of thing. It shows alerts like this,
+
+![Growl CartoDB Import Service](http://www.galenevans.org/images/grunt_cartodb_import.png)
+
+Here is the modified shell script,
+
+<script src="https://gist.github.com/gevans22/5908507.js">
+</script> 

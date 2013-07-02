@@ -28,17 +28,17 @@
 <div class="post">
 <p>APIs are great, and the CartoDB team has <a href='http://blog.cartodb.com/post/54101913823/got-files-weve-got-a-import-api'>recently released</a> an importer API. I have been playing around with it a bit as a pretty heavy user of CartoDB and it has been working pretty well. It allows you to do stuff like this:</p>
 
-<p><img alt='OSX Service for Uploading to CartoDB' src='http://www.galenevans.org/images/cartodb_osx_service.png' /></p>
+<p><img src='http://www.galenevans.org/images/cartodb_osx_service.png' alt='OSX Service for Uploading to CartoDB' /></p>
 
-<p><img alt='Upload Started' src='http://www.galenevans.org/images/upload_started.png' /> <img alt='Upload Finished' src='http://www.galenevans.org/images/upload_finished.png' /> <img alt='Table in CartoDB' src='http://www.galenevans.org/images/cartodb_table_uploaded.png' /></p>
+<p><img src='http://www.galenevans.org/images/upload_started.png' alt='Upload Started' /> <img src='http://www.galenevans.org/images/upload_finished.png' alt='Upload Finished' /> <img src='http://www.galenevans.org/images/cartodb_table_uploaded.png' alt='Table in CartoDB' /></p>
 
 <p>This was done through creating an OSX Service via Automator and it is pretty easy to do. The service is mainly a wrapper around <a href='https://gist.github.com/andrewxhill/5884845'>the CartoDB upload bash script</a> that was put together by <a href='https://www.github.com/andrewxhill'>andrewxhill</a> at CartoDB.</p>
 
 <p>To create the service in OSX you want to open Automator and create a new service.</p>
 
-<p><img alt='Create OSX Automator Service' src='http://www.galenevans.org/images/OSX_Automater_Service.png' /></p>
+<p><img src='http://www.galenevans.org/images/OSX_Automater_Service.png' alt='Create OSX Automator Service' /></p>
 
-<p>Once you have a blank service you need to add the &#8216;Get Selected Finder Items&#8217; action that is located within the &#8216;Files &amp; Folders&#8217; area of the actions library. After the &#8216;Get Selected Finder Items&#8217; you will need to add &#8216;Run Shell Script&#8217; and make sure &#8216;Pass input&#8217; is set to &#8216;as arugments&#8217;. <img alt='CartoDB Automator Service' src='http://www.galenevans.org/images/CartoDB_Upload_Service_in_Automator.png' /></p>
+<p>Once you have a blank service you need to add the &#8216;Get Selected Finder Items&#8217; action that is located within the &#8216;Files &amp; Folders&#8217; area of the actions library. After the &#8216;Get Selected Finder Items&#8217; you will need to add &#8216;Run Shell Script&#8217; and make sure &#8216;Pass input&#8217; is set to &#8216;as arugments&#8217;. <img src='http://www.galenevans.org/images/CartoDB_Upload_Service_in_Automator.png' alt='CartoDB Automator Service' /></p>
 
 <p>In the script itself you can copy and past the following and add your own CartoDB Username and <a href='http://developers.cartodb.com/documentation/cartodb-apis.html#authentication'>API Key</a>.</p>
 <script src='https://gist.github.com/gevans22/5900712.js'>
