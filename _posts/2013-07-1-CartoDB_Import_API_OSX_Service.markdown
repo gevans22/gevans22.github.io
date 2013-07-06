@@ -38,5 +38,5 @@ I wasn't the biggest fan of the system events pop ups. They required you to clos
 
 Here is the modified shell script,
 
-<script src="https://gist.github.com/gevans22/5908507.js">
-</script> 
+<script src="https://gist.github.com/gevans22/5941449.js">
+</script>
